@@ -6,7 +6,7 @@ const messageTwo = document.querySelector('#message-two')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    const url = 'http://localhost:3000/weather?address=' + search.value
+    const url = '/weather?address=' + search.value
     messageOne.textContent ='Weather loading, please hold...'
     messageTwo.textContent = ''
     fetch(url).then((response) => {
